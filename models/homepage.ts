@@ -6,9 +6,9 @@ import { ContentItem, Elements } from '@kentico/kontent-delivery';
  * Tip: You can replace 'ContentItem' with another generated class to fully leverage strong typing.
  */
 export class Homepage extends ContentItem {
-    public bodyText: Elements.RichTextElement;
-    public picture: Elements.AssetsElement;
-    public headline: Elements.TextElement;
+    public bodyText!: Elements.RichTextElement;
+    public picture!: Elements.AssetsElement;
+    public headline!: Elements.TextElement;
     constructor() {
         super({
             propertyResolver: ((elementName: string) => {
