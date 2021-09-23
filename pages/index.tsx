@@ -9,7 +9,7 @@ interface IPageProps {
   homepage: Homepage[];
 }
 
-export default function Home({ homepage }) {
+export default function Home({ homepage } : {homepage:any}) {
   return (
     <div className={utilStyles.container}>
     <Head>
