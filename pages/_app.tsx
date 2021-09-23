@@ -1,6 +1,6 @@
 import { AppProps } from 'next/app'
 import '../styles/globals.css'
-import { KontentSmartLink } from "@kentico/kontent-smart-link";
+import KontentSmartLink from "@kentico/kontent-smart-link";
 import { useEffect } from 'react';
 
 function App({ Component, pageProps }: AppProps) {
