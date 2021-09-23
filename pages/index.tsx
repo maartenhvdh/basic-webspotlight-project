@@ -18,9 +18,9 @@ export default function Home({ homepage } : {homepage:any}) {
     
     <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`} data-kontent-item-id={homepage.id } >
     
-    <img data-kontent-element-codename="image" src={homepage.image}></img>
+    <img data-kontent-element-codename="picture" src={homepage.image}></img>
     <h1 data-kontent-element-codename="headline">{homepage.headline}</h1>
-    <div data-kontent-element-codename="body" dangerouslySetInnerHTML={{ __html: homepage.body }} />
+    <div data-kontent-element-codename="bodyText" dangerouslySetInnerHTML={{ __html: homepage.body }} />
     </section>
     </div>
   );
