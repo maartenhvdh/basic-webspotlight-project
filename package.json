@@ -12,6 +12,7 @@
     "@kontent-ai/delivery-sdk": "^12.2.0",
     "@kontent-ai/react-components": "^0.1.1",
     "@kontent-ai/smart-link": "^3.0.0",
+    "bootstrap": "^5.2.1",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-bootstrap": "^2.5.0",

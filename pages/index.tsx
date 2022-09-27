@@ -18,8 +18,8 @@ export default function Home({ homepage }: { homepage }) {
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`} data-kontent-item-id={homepage.id} >
         <img data-kontent-element-codename="picture" src={homepage.image}></img>
-        <h1 data-kontent-element-codename="headline">{homepage.headline}</h1>
-        <RichText element={homepage.body}/>
+        <h1 data-kontent-element-codename="title">{homepage.title}</h1>
+        <div data-kontent-element-codename="bodyText" dangerouslySetInnerHTML={{ __html: homepage.body }} />
       </section>
     </div>
   );
@@ -31,8 +31,8 @@ export const getStaticProps: GetStaticProps = async context => {
   const props = {
     homepage: {
       id: getHomepage.data.item.system.id,
-      headline: getHomepage.data.item.elements.headline.value,
-      body: getHomepage.data.item.elements.bodyText,
+      headline: getHomepage.data.item.elements.title.value,
+      body: getHomepage.data.item.elements.bodyText.value,
       image: getHomepage.data.item.elements.picture.value[0].url,
     },
   };

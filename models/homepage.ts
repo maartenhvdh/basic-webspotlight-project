@@ -5,6 +5,6 @@ import { IContentItem, Elements } from "@kontent-ai/delivery-sdk";
  */
 export type Homepage = IContentItem<{
   picture: Elements.AssetsElement;
-  headline: Elements.TextElement;
+  title: Elements.TextElement;
   bodyText: Elements.RichTextElement;
 }>;
