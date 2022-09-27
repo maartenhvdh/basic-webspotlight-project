@@ -17,9 +17,9 @@ export const projectModel = {
           codename: 'picture',
           name: 'Picture',
         },
-        headline: {
-          codename: 'headline',
-          name: 'Headline',
+        title: {
+          codename: 'title',
+          name: 'Title',
         },
         body_text: {
           codename: 'body_text',

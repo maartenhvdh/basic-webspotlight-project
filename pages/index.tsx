@@ -31,7 +31,7 @@ export const getStaticProps: GetStaticProps = async context => {
   const props = {
     homepage: {
       id: getHomepage.data.item.system.id,
-      headline: getHomepage.data.item.elements.title.value,
+      title: getHomepage.data.item.elements.title.value,
       body: getHomepage.data.item.elements.bodyText.value,
       image: getHomepage.data.item.elements.picture.value[0].url,
     },
