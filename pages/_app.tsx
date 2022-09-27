@@ -10,7 +10,7 @@ function App({ Component, pageProps }: AppProps) {
         // HTML markup should still contain all necessary data-attributes (e.g. PageSection component).
         const kontentSmartLink = KontentSmartLink.initialize({
           defaultDataAttributes: {
-            projectId: "3b4e3f40-edce-017e-8b28-93376249bc93",
+            projectId: "d0e757a2-f5db-01e2-4c92-6b329bdc77a9",
             languageCodename: "default",
           },
           queryParam: "preview"
